@@ -13,7 +13,7 @@ let resultbd;
       filename: 'data-base.db',
       driver: sql3.Database
     })
-    resultbd = await db.get('SELECT * FROM dog_params')
+    resultbd = await db.all('SELECT * FROM dog_params')
 })()
 
 
